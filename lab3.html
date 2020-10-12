@@ -16,30 +16,27 @@
       <input type="hidden" name="redirect" value="lab4.html">
 
       <p><label>Imię: <input type="text" name="name" size="20"></label></p>
-      <p><label>E-mail: <input type="text" name="email" size="20"></label></p>
+      <p><label>E-mail: <input type="email" name="email" size="20" required="true"></label></p>
 
       <p><strong>Jakiej usługi potrzebujesz?</strong></p>
 
       <label>Strona internetowa
-          <input type="checkbox" name="service" value="webpage">
+          <input type="radio" name="service" value="webpage">
       </label>
       <label>Aplikacja mobilna
-          <input type="checkbox" name="service" value="mobileapp">
+          <input type="radio" name="service" value="mobileapp">
       </label>
       <label>Aplikacja desktopowa
-          <input type="checkbox" name="service" value="desktopapp">
+          <input type="radio" name="service" value="desktopapp">
       </label>
       <label>Aplikacja webowa
-          <input type="checkbox" name="service" value="webapp">
+          <input type="radio" name="service" value="webapp">
       </label>
 
       <p><strong>Czy zgadzasz się z postanowieniami zawartymi w regulaminie?</strong></p>
 
       <label>Tak
-        <input type="radio" name="accept" value="yes">
-      </label>
-      <label>Nie
-        <input type="radio" name="decline" value="no">
+        <input type="checkbox" name="accept" value="yes" required="true">
       </label>
 
       <p><strong>Jaki przedział cenowy Ciebie interesuje?</strong></p>
