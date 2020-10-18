@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kontakt</title>
+  </head>
+  <body>
+
+    <h1>Formularz kontaktowy</h1>
+    <p>Wyepłnij formularz, aby rozpocząć u nas zlecenie!</p>
+
+    <form action="lab4.html" method="post">
+
+      <input type="hidden" name="recipent" value="glowczes@gmail.com">
+      <input type="hidden" name="subcjet" value="contact">
+      <input type="hidden" name="redirect" value="lab4.html">
+
+      <p><label>Imię: <input type="text" name="name" size="20"></label></p>
+      <p><label>E-mail: <input type="email" name="email" size="20" required="true"></label></p>
+
+      <p><strong>Jakiej usługi potrzebujesz?</strong></p>
+
+      <label>Strona internetowa
+          <input type="checkbox" name="service" value="webpage">
+      </label>
+      <label>Aplikacja mobilna
+          <input type="checkbox" name="service" value="mobileapp">
+      </label>
+      <label>Aplikacja desktopowa
+          <input type="checkbox" name="service" value="desktopapp">
+      </label>
+      <label>Aplikacja webowa
+          <input type="checkbox" name="service" value="webapp">
+      </label>
+
+      <p><strong>Czy zgadzasz się z postanowieniami zawartymi w regulaminie?</strong></p>
+
+      <label>Tak
+        <input type="radio" name="accept" value="yes" required="true">
+      </label>
+      <label>Nie
+        <input type="radio" name="accept" value="no">
+      </label>
+
+      <p><strong>Jaki przedział cenowy Ciebie interesuje?</strong></p>
+      <select name="price">
+        <option>0-500zł</option>
+        <option>500-1000zł</option>
+        <option>1000-1500zł</option>
+        <option>1500-2000zł</option>
+        <option>2000-3000zł</option>
+      </select>
+
+      <p><label>Dodatkowe uwagi: <br><textarea name="problem" rows="8" cols="80" maxlength="200">Uwagi: </textarea></label></p>
+
+      <p>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+
+      </p>
+
+    </form>
+
+    <p>Aby napisać do Pawła wyślij maila na adres: <a href = "mailto:glowczes@gmail.com">glowczes@gmail.com</a></p>
+    <p>Aby napisać do Michała wyślij maila na adres: <a href = "mailto:michal.fadrowski@gmail.com">michal.fadrowski@gmail.com</a></p>
+
+  </body>
+</html>
