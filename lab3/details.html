@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Informacje dodatkowe</title>
+</head>
+
+<body>
+
+<section id="navigation">
+    <h3>Nawigacja </h3>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="register.html">Formularz osobowy</a></li>
+        </ul>
+    </nav>
+</section>
+
+<section id="userDetails">
+
+    <h3> Tu możesz podać trochę fajniejszych danych o sobie</h3>
+
+    <form method="post" action="end.html">
+
+        <label for="nickname">Ksywka:</label>
+        <input type="text" name="nickname" id="nickname" autocomplete="on" autofocus
+               placeholder="Jak mamy Cię nazywać?"> <br><br>
+
+        <label for="color">Twój ulubiony kolor: </label>
+        <input id="color" type="color" name="color" value="#108043"> <br><br>
+
+        <label for="month">Kiedy możesz zacząć pracować? </label>
+        <input id="month" type="month" name="month" min="2020-10" max="2022-12"> <br><br>
+
+        <label for="income">Ile chciałbyś zarabiać za godzinę pracy: </label>
+        <input id="income" type="range" name="income" min="0" max="100" value="20"
+               oninput="this.nextElementSibling.value = this.value">
+        <output>20</output>
+        <br><br>
+
+        <label>Search Pablo pls zrób</label>
+        <input type="search"> <br><br>
+
+        <label for="site">Strona o Tobie (facebook, linkedin, instagram) </label>
+        <input type="url" id="site" name="site"> <br><br>
+
+        <button type="submit">Przejdź dalej</button>
+
+    </form>
+
+</section>
+
+</body>
+
+</html>
