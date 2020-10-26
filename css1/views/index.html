@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Pablo&Fadro sp. b.r.o.</title>
+
+    <link href="../css/index.css" type="text/css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b39dd48ab4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Pablo&Fadro projects">
+    <meta name="keywords" content="Web developments, Pablo&Fadro, web aplications, contact, about ">
+</head>
+
+<body>
+
+<header>
+    <div id="header-top">
+        Pablo&Fadro sp. b.r.o.
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<a href="#about">
+    <div id="go-back-button">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</a>
+
+<section id="about">
+
+    <article>
+        <img src="../img/pablo.jpg">
+        <div class="about-desc">
+            <p style="font-size: 1em; font-family: 'Turret Road', cursive;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula urna, auctor
+                nec ligula in, volutpat sagittis elit. Morbi rutrum sed leo eget efficitur.
+                Vivamus quam neque, faucibus nec cursus vel, blandit eu felis. Donec nec
+                justo sit amet arcu suscipit malesuada at a augue. Integer at scelerisque odio,
+                eget ultrices orci. Suspendisse fringilla, justo vel dapibus tincidunt, felis lorem
+                finibus turpis, quis feugiat sapien nibh a erat. Phasellus maximus ipsum non semper
+                faucibus. Suspendisse sollicitudin nulla at orci condimentum ullamcorper. Etiam ante urna,
+                porta aliquet lorem eget, mollis tristique orci. Etiam finibus aliquet finibus.</p>
+
+            <p style="font-size: 15px; line-height: 30px">Vestibulum mollis est congue finibus ullamcorper. Sed nec magna blandit, luctus
+                ligula dictum,
+                pulvinar nunc. Aenean eu justo nisl. Maecenas viverra, lorem sed tempor aliquam, libero risus
+                cursus erat, ac suscipit mauris augue non orci. Vestibulum vulputate eleifend sodales. Sed eget
+                gravida enim. Maecenas dui nunc, luctus vel imperdiet et, elementum a sem. Integer ut pharetra mi.
+                Nulla tortor ligula, fringilla non tortor id, ultrices cursus mauris. Sed bibendum, metus sit amet
+                euismod eleifend, urna orci elementum massa, ac ultricies urna sem sit amet magna. Lorem ipsum dolor
+                sit amet, consectetur adipiscing elit. Mauris velit lectus, feugiat eget ultricies id, sagittis quis
+                nulla. Nulla turpis nisl, tempus eget urna in, tempor mollis nunc</p>
+        </div>
+    </article>
+
+    <article style="background-color: #FFEA8A">
+        <img src="../img/fadro.jpg">
+        <div class="about-desc">
+            <p style="font-size: 12pt; font-style: italic">Praesent malesuada id purus sit amet fermentum. Ut vitae est sit amet augue
+                bibendum tristique.
+                Vestibulum sit amet mi a nulla eleifend pharetra vitae et mauris. Nunc tempus, urna non aliquet dapibus,
+                urna purus consequat ex, ac molestie purus est quis est. Morbi a augue porta libero porta fermentum quis
+                ut odio. Nullam sed erat porttitor leo vestibulum laoreet. Integer eu consectetur nisi. Nullam lacinia
+                rutrum eros, id iaculis ipsum.</p>
+
+            <p style="font-size: 100%; font-weight: bold">Nam vitae nunc at nibh consectetur malesuada. Quisque tellus sem, porta non
+                scelerisque eu, dictum quis
+                est. Vivamus laoreet sollicitudin sem nec aliquet. Curabitur eu commodo metus. Proin sapien metus,
+                varius et iaculis sed, egestas eu lorem. Morbi justo enim, cursus eu elit vitae, tincidunt viverra enim.
+                Aenean aliquet sapien vel nisl faucibus, quis accumsan velit pharetra. Duis et augue nec ante
+                consectetur porttitor vel nec diam.</p>
+        </div>
+    </article>
+
+</section>
+
+<section id="services">
+
+    <table border="3">
+
+        <thead>
+        <tr>
+            <th>Usługa</th><th>Koszt</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td> Strona wizytówka</td> <td>1000</td>
+        </tr>
+        <tr class="fav-table-cell">
+            <td>Blog</td><td>2000</td>
+        </tr>
+        <tr>
+            <td>Dowolna apliakcja webowa</td><td>Cena do negocjacji</td>
+        </tr>
+        <tr>
+            <td>Puste okienko</td><td></td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section id="contact">
+
+    <h1>Skontaktuj się z nami!</h1>
+
+    <p><label >Imię: <input class="name-input" type="text" name="name" size="20"></label></p>
+    <p><label>E-mail: <input type="email" name="email" size="20" required="true"></label></p>
+
+    <p><strong>Jakiej usługi potrzebujesz?</strong></p>
+
+    <label class="radio-label">Strona wizytówka:
+        <input class="radio-input" type="radio" name="service" value="static">
+    </label>
+    <label class="radio-label">Blog:
+        <input class="radio-input" type="radio" name="service" value="blog">
+    </label>
+    <label class="radio-label">Inna aplikacja:
+        <input class="radio-input" type="radio" name="service" value="other">
+    </label>
+
+    <label class="radio-label">Aplikacja mobilna:
+        <input class="radio-input" type="radio" name="service" value="other" disabled>
+    </label>
+
+</section>
+
+<footer>
+
+</footer>
+
+</body>
+
+</html>

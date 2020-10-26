@@ -1,0 +1,177 @@
+
+/*----------------------------------------------------------------------------------------------------------- BACKGROUND IMG */
+body{
+    /*background-color: #454F5B;*/
+    background-image: url('../img/bananas.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-position: top;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#go-back-button{
+    position: fixed;
+    top: 90%;
+    left: 80%;
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    opacity: 50%;
+    background: blue;
+}
+
+#go-back-button  i{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    color: aqua;
+    font-size: 2.5vh;
+}
+
+/*-------------------------------------------------------------------------------------------------------------- BACKGROUND COLOR */
+
+header{
+    background-color: #DFE3E8;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+#header-top{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+nav{
+   text-align: center;
+
+
+}
+
+a:not([visited]){
+    color:yellow
+}
+
+a:visited{
+    color:green;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------ABOUT*/
+#about{
+    margin: 0% 10% 0 10%;
+    padding-top: 150px;
+    width: 80%;
+    height: 100%;
+}
+/*------------------------------------------------------------------------------------------------------------- PO KLASIE*/
+article{
+    background-color: #B4E1FA;
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------------------------------------------- WYKORZYSTANIE <  */
+
+article > img {
+    padding-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+/*------------------------------------------------------------------------------------------------------------STYLE ZAGNIEZDZONE */
+
+article p{
+    text-align: justify;
+    padding: 20px;
+    margin: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------ MEDIA */
+
+@media only screen and (min-width: 1000px){
+    #about{
+        display: flex;
+    }
+
+    article{
+        float: left;
+        width: 50%;
+    }
+
+    #go-back-button{
+        left: 90%;
+    }
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------TABELKA*/
+
+#services{
+    margin: 10% 10% 10% 10%;
+    width: 80%;
+    height: 100%;
+}
+
+table{
+    margin: auto;
+    width: 80%;
+    background: pink;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: red;
+}
+
+table tr:first-child{
+    font-size: 120%;
+}
+
+table tr:last-child{
+    font-size: 80%;
+}
+
+.fav-table-cell{
+    border-color: blueviolet;
+}
+
+td:empty{
+    background: black;
+}
+
+
+/*--------------------------------------------------------------------------------------------------------------CONTACT*/
+#contact{
+    margin: 10% 10% 10% 10%;
+    padding: 2% 2% 2% 2%;
+    width: 80%;
+    height: 100%;
+    background: white;
+}
+
+.name-input:focus{
+    background: pink;
+}
+
+.name-input:not('Michał'){
+    background: red;
+}
+
+
+.radio-label:hover{
+    color: brown;
+}
+
+.radio-label:active{
+    color: blue;
+}
+
+.radio-input:checked{
+    height: 20px;
+    width: 20px;
+}
+
+input:disabled{
+    display: none;
+}
+
