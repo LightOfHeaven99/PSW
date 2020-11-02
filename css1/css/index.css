@@ -4,8 +4,8 @@ body{
     /*background-color: #454F5B;*/
     background-image: url('../img/bananas.jpg');
     background-repeat: round;
-    background-attachment: fixed;
     background-position: top;
+    background-origin: border-box;
     padding: 0 !important;
     margin: 0 !important;
 }
@@ -227,4 +227,3 @@ td:empty{
 input:disabled{
     display: none;
 }
-
