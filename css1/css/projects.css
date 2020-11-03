@@ -3,33 +3,13 @@
 body{
     /*background-color: #454F5B;*/
     background-image: url('../img/back.png');
-    background-repeat: round;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-origin: content-box;
     background-position: top;
     padding: 0 !important;
     margin: 0 !important;
     font-family: 'Ubuntu', sans-serif;
 }
-
-#go-back-button{
-    position: fixed;
-    top: 90%;
-    left: 80%;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    opacity: 50%;
-    background: blue;
-}
-
-#go-back-button  i{
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    color: aqua;
-    font-size: 2.5vh;
-}
-
 /*-------------------------------------------------------------------------------------------------------------- BACKGROUND COLOR */
 
 header{
@@ -91,3 +71,92 @@ h1 {
     url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Turret+Road:wght@200;500&family=Ubuntu:wght@500&display=swap"');
 }
 }
+
+#borderimg1 {
+  border: 20px solid transparent;
+  padding: 25px;
+  border-image-source: url('../img/border.png');
+  border-image-repeat: stretch;
+  border-image-slice: 20;
+}
+
+#animation {
+  position: relative;
+-webkit-animation: movingImage linear 10s 1s 2 alternate;
+-moz-animation: movingImage linear 10s 1s 2 alternate;
+ animation: movingImage linear 10s 2 1s alternate;
+ animation-duration: 15s;
+ animation-delay: 1s;
+ animation-name: movingImage;
+}
+
+@-webkit-keyframes movingImage  {
+   0%   {opacity: 0; left: 50px; top: 0px;}
+   25%  {opacity: 1; left: 0px; top:5 0px;}
+   50%  {opacity: 0; left: 50px; top: 100px;}
+   75%  {opacity: 1; left: 100px; top: 50px;}
+    100% {opacity: 0; left: 50px; top: 0px;}
+}
+
+@-moz-keyframes movingImage  {
+   0%   {opacity: 0; left: 50px; top: 0px;}
+  25%  {opacity: 1; left: 0px; top:5 0px;}
+  50%  {opacity: 0; left: 50px; top: 100px;}
+  75%  {opacity: 1; left: 100px; top: 50px;}
+  100% {opacity: 0; left: 50px; top: 0px;}
+}
+
+@keyframes movingImage   {
+  0%   {opacity: 0; left: 50px; top: 0px;}
+  25%  {opacity: 1; left: 0px; top: 50px;}
+  50%  {opacity: 0; left: 50px; top: 100px;}
+  75%  {opacity: 1; left: 100px; top: 50px;}
+  100% {opacity: 0; left: 50px; top: 0px;}
+}
+
+.multicolumns {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  -o-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  -o-column-gap: 25px;
+  column-gap: 25px;
+  -webkit-column-rule: 1px black;
+   -moz-column-rule: 1px outset black;
+   -o-column-rule: 1px outset black;
+   column-rule: 1px outset black;
+}
+
+
+@media handheld and (max-width: 480px),
+  screen and (max-device-width: 480px),
+  screen and (max-width: 480px)
+
+  {
+   .responsiveColumns {
+    -webkit-column-count: 2;
+    column-count: 2; }
+  }
+  @media only screen and (min-width: 481px) and
+  (max-width: 1024px)
+  {
+  .responsiveColumns {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+    -webkit-column-rule: 1px outset black;
+    column-rule: 1px outset black; }
+      }
+@media only screen and (min-width: 1025px)
+    {
+  .responsiveColumns {
+  -webkit-column-count: 4;
+  column-count: 4;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+  -webkit-column-rule: 1px outset black;
+  column-rule: 1px outset black; }
+ }
