@@ -151,6 +151,7 @@ h1 {
   position: relative;
 -webkit-animation: movingImage linear 10s 1s 2 alternate;
 -moz-animation: movingImage linear 10s 1s 2 alternate;
+-o-animation: movingImage linear 10s 1s 2 alternate;
  animation: movingImage linear 10s 2 1s alternate;
  animation-duration: 15s;
  animation-delay: 1s;
