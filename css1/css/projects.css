@@ -147,6 +147,7 @@ h1 {
 /*-------------------------------------------------------------------------------------------------------------- */
 
 #animation {
+  margin: 80px;
   position: relative;
 -webkit-animation: movingImage linear 10s 1s 2 alternate;
 -moz-animation: movingImage linear 10s 1s 2 alternate;
