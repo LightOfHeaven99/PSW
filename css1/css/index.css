@@ -1,6 +1,5 @@
-
 /*----------------------------------------------------------------------------------------------------------- BACKGROUND IMG */
-body{
+body {
     /*background-color: #454F5B;*/
     background-image: url('../img/bananas.jpg');
     background-repeat: round;
@@ -10,7 +9,7 @@ body{
     margin: 0 !important;
 }
 
-#go-back-button{
+#go-back-button {
     position: fixed;
     top: 90%;
     left: 80%;
@@ -21,7 +20,7 @@ body{
     background: blue;
 }
 
-#go-back-button  i{
+#go-back-button i {
     position: absolute;
     top: 25%;
     left: 25%;
@@ -31,27 +30,27 @@ body{
 
 /*-------------------------------------------------------------------------------------------------------------- BACKGROUND COLOR */
 
-header{
+header {
     background-color: #DFE3E8;
     height: 100px;
     width: 100%;
     position: fixed;
 }
 
-#header-top{
+#header-top {
     text-align: center;
     padding-top: 20px;
     font-size: 30px;
 }
 
-#header-top:active{
+#header-top:active {
     text-align: center;
     padding-top: 20px;
     font-size: 30px;
 }
 
-nav{
-   text-align: center;
+nav {
+    text-align: center;
 }
 
 .dropbtn {
@@ -76,7 +75,7 @@ nav{
     top: 75px;
     background-color: #DFE3E8;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -89,7 +88,9 @@ nav{
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -103,23 +104,24 @@ nav{
 
 /*-------------------------------------------------------------------------------------------------------------ROZWIJANIE SYFU*/
 
-a:not([visited]){
-    color:yellow
+a:not([visited]) {
+    color: yellow
 }
 
-a:visited{
-    color:green;
+a:visited {
+    color: green;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------ABOUT*/
-#about{
+#about {
     margin: 0% 10% 0 10%;
     padding-top: 150px;
     width: 80%;
     height: 100%;
 }
+
 /*------------------------------------------------------------------------------------------------------------- PO KLASIE*/
-article{
+article {
     background-color: #B4E1FA;
     text-align: center;
 }
@@ -135,7 +137,7 @@ article > img {
 
 /*------------------------------------------------------------------------------------------------------------STYLE ZAGNIEZDZONE */
 
-article p{
+article p {
     text-align: justify;
     padding: 20px;
     margin: 0;
@@ -143,17 +145,17 @@ article p{
 
 /*------------------------------------------------------------------------------------------------------------ MEDIA */
 
-@media only screen and (min-width: 1000px){
-    #about{
+@media only screen and (min-width: 1000px) {
+    #about {
         display: flex;
     }
 
-    article{
+    article {
         float: left;
         width: 50%;
     }
 
-    #go-back-button{
+    #go-back-button {
         left: 90%;
     }
 }
@@ -161,13 +163,13 @@ article p{
 
 /*-----------------------------------------------------------------------------------------------------------TABELKA*/
 
-#services{
+#services {
     margin: 10% 10% 10% 10%;
     width: 80%;
     height: 100%;
 }
 
-table{
+table {
     margin: auto;
     width: 80%;
     background: pink;
@@ -176,25 +178,25 @@ table{
     border-color: red;
 }
 
-table tr:first-child{
+table tr:first-child {
     font-size: 120%;
 }
 
-table tr:last-child{
+table tr:last-child {
     font-size: 80%;
 }
 
-.fav-table-cell{
+.fav-table-cell {
     border-color: blueviolet;
 }
 
-td:empty{
+td:empty {
     background: black;
 }
 
 
 /*--------------------------------------------------------------------------------------------------------------CONTACT*/
-#contact{
+#contact {
     margin: 10% 10% 10% 10%;
     padding: 2% 2% 2% 2%;
     width: 80%;
@@ -202,28 +204,28 @@ td:empty{
     background: white;
 }
 
-.name-input:focus{
+.name-input:focus {
     background: pink;
 }
 
-.name-input:not('Michał'){
+.name-input:not("Michał") {
     background: red;
 }
 
 
-.radio-label:hover{
+.radio-label:hover {
     color: brown;
 }
 
-.radio-label:active{
+.radio-label:active {
     color: blue;
 }
 
-.radio-input:checked{
+.radio-input:checked {
     height: 20px;
     width: 20px;
 }
 
-input:disabled{
+input:disabled {
     display: none;
 }
