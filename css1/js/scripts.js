@@ -1,5 +1,7 @@
+var wiek_pabla = parseInt("11");
+
 const questions_table = [
-    ["Ile lat ma Paweł?", 11],
+    ["Ile lat ma Paweł?", wiek_pabla],
     ["Co jest najbardziej niebezpiecznym zwierzęciem w rzece?", "Wąż"],
     ["Jaka jest prędkość lecącej jaskółki?", "Afrykańskiej czy Europejskiej?"],
     ["Na jakiej ulicy mieści się Pablo&Fadro sp. b.r.o.", "Bujwida"],
@@ -7,20 +9,19 @@ const questions_table = [
 
 let asked_questions = [questions_table.length];
 
-let wonsz_angery = 0.2;
+let wonsz_angery = parseFloat(0.1);
 
 let last_question;
 
 function nextNumber() {
     var question_number;
-    if (questions_table.length === asked_questions.length) {
-        return asked_questions.length;
+    if (asked_questions.length > questions_table.length) {
+        return 5;
     }
     do {
         question_number = Math.random();
         question_number = Math.floor(question_number * 10) % 4;
     } while (asked_questions.includes(question_number))
-    asked_questions.push(question_number);
     last_question = question_number;
     return question_number;
 
@@ -31,21 +32,30 @@ function checkAnswer(answer){
 }
 
 function getAnswer(){
-    asked_questions.push(last_question);
     var input = document.getElementById("Answer").innerText;
     if (checkAnswer(input)){
         window.alert("You choose wisely!");
+        wonsz_get_angery(-0.3);
+        asked_questions.push(last_question);
+        start();
+
     } else{
         window.alert("You choose poorly!");
-        wonsz_get_angery();
+        wonsz_get_angery(0.3);
     }
 }
 
-function wonsz_get_angery() {
-    wonsz_angery += 0.3;
+
+function wonsz_get_angery(angery) {
+    wonsz_angery += angery;
     var wonsz = document.getElementById("wonsz-jpg");
     document.getElementById("wonsz-jpg").style.opacity = wonsz_angery;
+
+    if (document.getElementById("wonsz-jpg").style.opacity >=1) {
+        document.writeln("<h1> Przegrałeś! </h1>");
+    }
 }
+
 
 function parseAnswer() {
   document.getElementById("wonszButton").addEventListener("click", getAnswer);
@@ -63,10 +73,13 @@ function answer() {
   }
 }
 
-function widocznoscWonsza() {
-  document.getElementById("Answer").style.opacity = 0.2;
+function hello() {
+  window.alert("Spotkałeś węża! Aby wąż nie był niebezpieczny musisz odpowiedzieć na kilka zagadek!")
 }
 
-function hello() {
-  window.alert("Spotkałeś węża! Aby wąż nie był niebezpieczny musisz odpowiedzieć na kilka zagadek!");
+function nieKlikaj() {
+    document.getElementById("noclick");
+    document.writeln("<h1> Ostrzegaliśmy, żebyś nie klikał! </h1>");
 }
+
+hello();
