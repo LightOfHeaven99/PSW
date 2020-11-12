@@ -9,6 +9,7 @@ body{
     padding: 0 !important;
     margin: 0 !important;
     font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 /*-------------------------------------------------------------------------------------------------------------- */
 
@@ -40,6 +41,12 @@ h1 {
   text-align: center;
   text-shadow: -10px 10px 20px black;
 }
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  text-shadow: -10px 10px 20px black;
+}
 /*-------------------------------------------------------------------------------------------------------------- */
 .round {
   border: 5px dimgrey;
@@ -48,7 +55,20 @@ h1 {
   width: 150px;
   text-align: center;
   border-radius: 20px;
-  margin-left: 670px;
+  margin: auto;
+  transition: width 2s, height 2s, transform 2s;
+  -webkit-transition: -webkit-transform 4s;
+  -moz-transition: -moz-transform 4s;
+  -o-transition: -o-transform 4s;
+  transition: transform 4s;
+}
+
+.round:hover {
+  -webkit-transform: rotate(360deg) scale(1, 1);
+  -moz-transform: rotate(360deg) scale(1, 1);
+  -o-transform: rotate(360deg) scale(1, 1);
+  transform: rotate(360deg) scale(1, 1);
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .round2 {
@@ -59,25 +79,22 @@ h1 {
   box-shadow: 50px 50px 100px black;
   text-align: center;
   border-radius: 40px;
-  margin-left: 670px;
+  margin: auto;
+  transition: width 2s linear 1s;
+}
+
+.round2:hover {
+  width: 400px;
 }
 
 /*-------------------------------------------------------------------------------------------------------------- */
 
 #linear_gradient {
-  margin: 150px;
+  margin: auto;
   height: 200px;
   width: 300px;
   background-color: blue;
-  background-image: linear-gradient(to left, blue, green, yellow);
-}
-
-#radial_gradient {
-  margin: 150px;
-  height: 200px;
-  width: 200px;
-  background-color: blue;
-  background-image: radial-gradient(circle, blue, red, green);
+  background-image: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 /*-------------------------------------------------------------------------------------------------------------- */
@@ -110,52 +127,19 @@ h1 {
 
 /*-------------------------------------------------------------------------------------------------------------- */
 
-.transition_img {
-  margin: 80px;
-  width: 100px;
-  height: 100px;
-  background: blue;
-  transition: width 2s, height 2s, transform 2s;
-  -webkit-transition: -webkit-transform 4s;
-  -moz-transition: -moz-transform 4s;
-  -o-transition: -o-transform 4s;
-  transition: transform 4s;
-}
-.transition_img:hover {
-  -webkit-transform: rotate(360deg) scale(2, 2);
-  -moz-transform: rotate(360deg) scale(2, 2);
-  -o-transform: rotate(360deg) scale(2, 2);
-  transform: rotate(360deg) scale(2, 2);
-  background: blue;
-  transition: width 2s, height 2s, transform 2s;
-  width: 100px;
-  height: 100px;
-}
-
-.transition_img2 {
-  margin: 80px;
-  width: 100px;
-  height: 100px;
-  background: purple;
-  transition: width 2s linear 1s;
-}
-
-.transition_img2:hover {
-  width: 400px;
-}
-
-/*-------------------------------------------------------------------------------------------------------------- */
-
-#animation {
-  margin: 80px;
+#animation-gradient {
+  margin: auto;
+  height: 200px;
+  width: 300px;
   position: relative;
--webkit-animation: movingImage linear 10s 1s 2 alternate;
--moz-animation: movingImage linear 10s 1s 2 alternate;
--o-animation: movingImage linear 10s 1s 2 alternate;
- animation: movingImage linear 10s 2 1s alternate;
- animation-duration: 15s;
- animation-delay: 1s;
- animation-name: movingImage;
+  -webkit-animation: movingImage linear 10s 1s 2 alternate;
+  -moz-animation: movingImage linear 10s 1s 2 alternate;
+  -o-animation: movingImage linear 10s 1s 2 alternate;
+   animation: movingImage linear 10s 2 1s alternate;
+   animation-duration: 15s;
+   animation-delay: 1s;
+   animation-name: movingImage;
+   background-image: radial-gradient(closest-side, #3f87a6, #ebf8e1, #f69d3c);
 }
 
 @-webkit-keyframes movingImage  {
@@ -185,6 +169,8 @@ h1 {
 /*-------------------------------------------------------------------------------------------------------------- */
 
 .multicolumns {
+  margin-left: 20px;
+  margin-right: 20px;
   -webkit-column-count: 4;
   -moz-column-count: 4;
   -o-column-count: 4;
@@ -214,6 +200,8 @@ h1 {
   (max-width: 1024px)
   {
   .responsiveColumns {
+    margin-left: 20px;
+    margin-right: 20px;
     -webkit-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 30px;
@@ -224,6 +212,8 @@ h1 {
 @media only screen and (min-width: 1025px)
     {
   .responsiveColumns {
+    margin-left: 20px;
+    margin-right: 20px;
   -webkit-column-count: 4;
   column-count: 4;
   -webkit-column-gap: 30px;
@@ -231,3 +221,37 @@ h1 {
   -webkit-column-rule: 1px outset black;
   column-rule: 1px outset black; }
  }
+ /*-------------------------------------------------------------------------------------------------------------- */
+
+ .flexbox {
+   margin: auto;
+   width: 700px;
+   height: 500px;
+   display: -webkit-box;
+   display: box;
+   -webkit-box-orient: horizontal;
+   box-orient: horizontal;
+ }
+
+ .flexbox > div {
+   -webkit-transition: 2s ease-out;
+   transition: 2s;
+   -webkit-border-radius: 15px;
+   border-radius: 15px;
+   border: 3px solid black;
+   width: 300px;
+   padding: 20px 20px 20px 20px;
+   box-shadow: 10px 10px 10px dimgrey;
+ }
+
+ .flexbox > div:nth-child(1) {background-color: dimgrey; }
+ .flexbox > div:nth-child(2) {background-color: dimgrey; }
+
+ .flexbox >div:hover {
+   width: 400px;
+   color: white;
+   font-weight: bold;
+ }
+
+ .flexbox >div:nth-child(1):hover { background-color: royalblue; }
+ .flexbox >div:nth-child(2):hover { background-color: crimson; }
