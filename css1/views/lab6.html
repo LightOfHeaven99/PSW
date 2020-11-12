@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Pablo&Fadro sp. b.r.o.</title>
     <link href="../css/lab6.css" type="text/css" rel="stylesheet">
-    <script src="../js/scripts.js" type="text/javascript"></script>
+    <script src="../js/scripts.js" type="text/javascript">
+    </script>
 
     <meta name="description" content="Pablo&Fadro js project">
     <meta name="keywords" content="Web developments, Pablo&Fadro, js skills ">
@@ -14,11 +15,12 @@
 
   </div><br>
   <div class="btn-group">
-    <button name="wonszButton" type="button" onclick="wonsz()">Pierwsza zagadka!</button><br>
-    <button name="wonszButton" type="button" onclick="wonsz()">Druga zagadka!</button><br>
-    <button name="wonszButton" type="button" onclick="wonsz()">Trzecia zagadka!</button><br>
-    <button name="wonszButton" type="button" onclick="wonsz()">Ostatnia zagadka!</button><br>
+    <button id="question" onclick="start()">Pobierz zagadkę</button><br><br>
+    <button id="Answer" onclick="answer()">Podaj odpowiedź</button><br><br>
+    <button id="wonszButton" type="button" onclick="parseAnswer()">Prześlij odpowiedź!</button><br>
 </div>
-
+<img id="wonsz-jpg" src="../img/rzeczny.jpg" alt="wonsz rzeczny">
+<label for="angry-wonsz"><b>Jak niebezpieczny jest wonsz:</b></label>
+<meter id="angry-wonsz" value="1" min="0" max="10"></meter><br>
   </body>
 </html>

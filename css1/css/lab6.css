@@ -14,6 +14,13 @@ body {
   z-index: -1;
 }
 
+#wonsz-jpg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0.05;
+}
+
 .btn-group button {
   background-color: blue; /* Green background */
   border: 1px solid white; /* Green border */
