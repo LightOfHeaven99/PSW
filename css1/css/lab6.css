@@ -1,0 +1,21 @@
+/*----------------------------------------------------------------------------------------------------------- BACKGROUND IMG */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wonsz-background {
+  background-image: url('../img/wonsz.jpg');
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+button {
+  margin: auto;
+  position: absolute;
+  padding: 10px 20px;
+}
