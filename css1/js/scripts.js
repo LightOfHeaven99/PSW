@@ -1,20 +1,20 @@
 var wiek_pabla = parseInt("11");
 
-const heightOutput = document.querySelector('#height');
-const widthOutput = document.querySelector('#width');
+const heightOutput = document.querySelector("#height");
+const widthOutput = document.querySelector("#width");
 
 const questions_table = [
     ["Ile lat ma Paweł?", wiek_pabla],
     ["Co jest najbardziej niebezpiecznym zwierzęciem w rzece?", "Wąż"],
     ["Jaka jest prędkość lecącej jaskółki?", "Afrykańskiej czy Europejskiej?"],
-    ["Na jakiej ulicy mieści się Pablo&Fadro sp. b.r.o.", "Bujwida"],
+    ["Na jakiej ulicy mieści się Pablo&Fadro sp. b.r.o.", "Bujwida"]
 ];
 
-let asked_questions = [questions_table.length];
+var asked_questions = [questions_table.length];
 
-let wonsz_angery = parseFloat(0.1);
+var wonsz_angery = parseFloat(0.1);
 
-let last_question;
+var last_question;
 
 function nextNumber() {
     var question_number;
@@ -41,7 +41,6 @@ function getAnswer() {
         wonsz_get_angery(-0.3);
         asked_questions.push(last_question);
         start();
-        sll
 
     } else {
         window.alert("You choose poorly!");
@@ -98,7 +97,7 @@ function answer() {
 
 function sleep(milliseconds) {
     const date = Date.now();
-    let currentDate = null;
+    var currentDate = null;
     do {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
