@@ -7,7 +7,7 @@ const questions_table = [
 
 let asked_questions = [questions_table.length];
 
-var wonsz_angery = parseInt("0.9");
+let wonsz_angery = 0.2;
 
 let last_question;
 
@@ -42,6 +42,7 @@ function getAnswer(){
 }
 
 function wonsz_get_angery() {
+    wonsz_angery += 0.3;
     var wonsz = document.getElementById("wonsz-jpg");
     document.getElementById("wonsz-jpg").style.opacity = wonsz_angery;
 }
