@@ -253,5 +253,5 @@ h2 {
    font-weight: bold;
  }
 
- .flexbox >div:nth-child(1):hover { background-color: royalblue; }
- .flexbox >div:nth-child(2):hover { background-color: crimson; }
+ .flexbox >div:nth-child(1):hover { background-color: #F0FFFF; }
+ .flexbox >div:nth-child(2):hover { background-color: #8A2BE2; }
