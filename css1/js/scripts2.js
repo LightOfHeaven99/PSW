@@ -17,3 +17,9 @@ function replaceForfiter() {
   var item = document.getElementById("list").childNodes[0];
   item.replaceChild(textnode, item.childNodes[0]);
 }
+
+function changeColor() {
+  document.getElementById("question").style.color = "red";
+  document.getElementById("Answer").style.fontFamily = "Impact,Charcoal,sans-serif";
+  document.getElementById("wonsz-background").style.backgroundImage = "url(../img/back.png)"
+}
