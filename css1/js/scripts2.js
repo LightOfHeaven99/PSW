@@ -18,15 +18,15 @@ function replaceForfiter() {
   item.replaceChild(textnode, item.childNodes[0]);
 }
 
+function getListNameElement() {
+  var x = document.getElementById("list").parentNode.nodeName;
+  document.getElementById("listName").innerHTML = x;
+}
+
 function changeColor() {
   document.getElementById("question").style.color = "red";
   document.getElementById("Answer").style.fontFamily = "Impact,Charcoal,sans-serif";
   document.body.style.backgroundColor = "red";
-}
-
-function listaForfiterow() {
-  var x = document.anchors[0].innerHTML;
-  document.getElementById("list").innerHTML = x;
 }
 
 function getNazwaObrazka() {
