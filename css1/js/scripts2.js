@@ -21,5 +21,25 @@ function replaceForfiter() {
 function changeColor() {
   document.getElementById("question").style.color = "red";
   document.getElementById("Answer").style.fontFamily = "Impact,Charcoal,sans-serif";
-  document.getElementById("wonsz-background").style.backgroundImage = "url(../img/back.png)"
+  document.body.style.backgroundColor = "red";
+}
+
+function listaForfiterow() {
+  var x = document.anchors[0].innerHTML;
+  document.getElementById("list").innerHTML = x;
+}
+
+function getNazwaObrazka() {
+  var nazwa = document.images.namedItem("wonsz-jpg").src;
+  document.getElementById("obrazek").innerHTML = nazwa;
+}
+
+function getNazwaLinka() {
+  var nazwa = document.links.item("anch").href;
+  document.getElementById("linkeł").innerHTML = nazwa;
+}
+
+function getNazwaAnch() {
+  var nazwa = document.anchors.item("wąż").innerHTML;
+  document.getElementById("anch2").innerHTML = nazwa;
 }
