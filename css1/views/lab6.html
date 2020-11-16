@@ -6,6 +6,7 @@
     <link href="../css/lab6.css" type="text/css" rel="stylesheet">
     <script src="../js/scripts.js" type="text/javascript">
     </script>
+    <script src="../js/scripts2.js" type="text/javascript"></script>
 
     <meta name="description" content="Pablo&Fadro js project">
     <meta name="keywords" content="Web developments, Pablo&Fadro, js skills ">
@@ -18,8 +19,16 @@
     <button id="question" onclick="start()">Pobierz zagadkę</button><br><br>
     <button id="Answer" onclick="answer()">Podaj odpowiedź</button><br><br>
     <button id="wonszButton" type="button" onclick="parseAnswer()">Prześlij odpowiedź!</button><br>
-    <button id="noclick" type="button" onclick="nieKlikaj()">Nie klikaj!</button><br>
+    <button id="forfiter" type="button" onclick="addForfiter()">Nie klikaj!</button><br>
+    <button id="deleteForfiter" type="button" onclick="deleteForfiter()">Ratuj się!</button><br>
+    <button id="replaceForfiter" type="button" onclick="replaceForfiter()">Tu tak średnio!</button><br>
+
 </div>
+<ul id="list">
+  <li>Aligator</li>
+  <li>Forfiter</li>
+  <li>Wąż</li>
+</ul>
 <img id="wonsz-jpg" src="../img/rzeczny.png" alt="wonsz rzeczny">
   </body>
 </html>
