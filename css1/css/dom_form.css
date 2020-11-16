@@ -1,0 +1,46 @@
+/*----------------------------------------------------------------------------------------------------------- BACKGROUND IMG */
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-image: url('../img/river.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80vw;
+    height: 100vh;
+}
+.click-lesson{
+    background: white;
+    box-shadow: 0 5px 10px black;
+    text-align: center;
+    width: 80%;
+    padding: 20px;
+    margin: 20px auto auto;
+
+}
+
+#forfiter-jpg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    opacity: 0.3;
+}
+
+.feedback{
+    background: white;
+    box-shadow: 0 5px 10px black;
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+    margin: 40px 20px auto;
+}
+
+.button{
+    background: white;
+    box-shadow: 0 5px 10px black;
+    text-align: center;
+    width: 10%;
+    padding: 10px;
+    margin: 20px 20px auto
+}
