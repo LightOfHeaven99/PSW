@@ -86,10 +86,10 @@ function blurFeedback() {
 }
 
 function submitFeedback() {
-    document.alert("Dzięki za feedback :)")
+    alert("Dzięki za feedback :)")
 }
 
 function resetFeedback() {
-    document.alert("Ale weź coś wpisz :(")
+    alert("Ale weź coś wpisz :(")
     document.getElementById("feedback").placeholder = "O tu wpisz ";
 }

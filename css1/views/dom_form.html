@@ -45,7 +45,7 @@
 
 </div>
 
-<form >
+<form onsubmit="submitFeedback()" onreset="resetFeedback()">
 
 <div class="row">
     <div class="col">
@@ -54,11 +54,14 @@
 </div>
 <div class="row">
     <div class="col">
-        <button class="button" onsubmit="submitFeedback()" >
-            Prześlij dalej
-        </button>
+        <input class="button" type="submit">
+    	<input class="button" type="reset" >
+  
     </div>
+        
 </div>
+
+</form>
 
 <img id="forfiter-jpg" onmousemove="move_forfiter()" onmouseover="hotForfiter(event)" src="../img/forfiter.jpg" alt="wonsz rzeczny">
 
